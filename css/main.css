@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.nav{
+    position: fixed;
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 1rem 2rem;
+     background-color: black;
+     color: white;
+ }
+ .nav .logo a{
+     color: white;
+     font-size: 1.8rem;
+     text-decoration: none;
+ }
+ .nav .logo a:hover{
+     color: orange;
+ }
+ .nav_list{
+     display: flex;
+     gap: 5rem;
+     list-style: none;
+ }
+ 
+ .nav_list li a{
+     text-decoration: none;
+     color: white;
+ }
+ 
+ .nav_list li a:hover{
+     color: orange;
+ }
+ .icon{
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    display: none;  
+}
+.icon span{
+    background-color: white;
+    width: 30px;
+    height: 2px;
+}
+
+header{
+    background-image: url(../images/360_F_809482598_iFY3RUsAXrpaJAuFh2UijLuLhGMQYJDb.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.action-button{
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: white;
+    color: black;
+}
+.action-button:hover{
+    background-color:burlywood;
+    color: white;
+}
+
+header{
+    padding: 40px;
+    padding-top: 6rem;
+    color: white;
+}
+header p {
+    font-size: 1.5rem;
+}
+header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 15px 0;
+    padding: 20px 0;
+}
+header div{
+    padding-top: 150px;
+    font-size: 30px;
+    padding-left: 80px;
+}
+
+
+
+#about{
+    
+    background-color: silver;
+    margin: 50px;
+    padding: 20px 30px;
+    line-height: 1.5;
+}
+#picture{
+    background-color: silver;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+    
+}
+#picture .gallery img{
+  padding: 0 50px;
+  width: 250px;
+  height: 250px;
+  margin: 30px 0;
+  width: 25%;
+  transition: all 1s;
+}
+
+#picture .gallery img:hover{
+    transform: scale(1.05);
+}
+
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color:black;
+    margin-bottom: 10px;
+    color: white;
+}
+footer p{
+    font-size: 1.5rem;
+}
+@media(max-width:760px){
+    .nav_list{
+        position: absolute;
+        gap: 5px;
+        top: 50px;
+        background-color: black;
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        padding: 1rem;
+        display: none;
+    }
+    .icon{
+        display: flex;
+    }
+}
+.nav_list.play{
+    display: flex;
+}
